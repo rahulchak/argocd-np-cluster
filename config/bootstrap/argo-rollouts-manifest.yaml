@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-rollouts-manifest
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: argocd
+  source:
+    path: config/argo-rollouts
+    repoURL: https://github.com/ch-robinson-internal/argocd-dds-ebdc-np-cluster
+    targetRevision: HEAD
