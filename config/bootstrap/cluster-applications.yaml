@@ -10,5 +10,5 @@ spec:
   project: argocd
   source:
     path: config
-    repoURL: https://github.com/rahulchak/argocd-np-cluster
+    repoURL: https://github.com/rahulchak/argocd-np-applications
     targetRevision: HEAD
