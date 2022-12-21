@@ -15,6 +15,8 @@ spec:
   destinations:
   - namespace: argocd
     server: https://kubernetes.default.svc
+  - namespace: redis-dev
+    server: https://kubernetes.default.svc    
   # Deny all cluster-scoped resources from being created, except for Namespace and Application
   clusterResourceWhitelist:
   - group: '*'
